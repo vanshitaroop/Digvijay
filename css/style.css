@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
+.banner_image {
+height: 100vh;
+position: relative;
+}
+
+.desk_video {
+
+position: absolute;
+/* top: 0;
+left: 0; */
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+.content {
+padding: 0 20%;
+
+
+}
+
+
+.prefooter--content {
+padding: 2.5rem;
+display: flex;
+gap: 1.25rem;
+justify-content: center;
+background: #181818;
+}
+
+.prefooter--content a {
+color: #fff;
+font-size: 1rem;
+line-height: 1.5rem;
+font-weight: 300;
+text-decoration: none;
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.password_content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+width: 100%;
+padding: 0 2.5rem;
+}
+
+.password_content .heading {
+font-size: 1rem;
+line-height: 1.5rem;
+margin-bottom: 0.625rem;
+font-weight: 500;
+letter-spacing: 2px;
+font-family: Playfair Display, serif;
+}
+
+.password_content .description p,
+.password_content .description a {
+font-family: Playfair Display, serif;
+color: #fff;
+font-size: 2.25rem;
+line-height: 2.75rem;
+letter-spacing: .25rem;
+font-weight: 700;
+}
+.quate-content {
+max-width: 31.813rem;
+margin: 0 auto;
+text-align: center;
+max-width: 39.938rem;
+}
+.quate_content p{
+
+font-family: Playfair Display, serif;
+font-size: 1.25rem;
+}
+
+@media (max-width:600px) {
+
+.password_content .description p,
+.password_content .description a {
+    font-family: Playfair Display, serif;
+    color: #fff;
+    font-size: 1.10rem;
+    line-height: 2.75rem;
+    letter-spacing: .25rem;
+    font-weight: 700;
+}
+
+.content {
+    padding: 0 0%;
+    /* text-align: justify; */
+
+
+}
+
+}
+@media (min-width:601px) and (max-width:800px) {
+
+.password_content .description p,
+.password_content .description a {
+    font-family: Playfair Display, serif;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    letter-spacing: .25rem;
+    font-weight: 700;
+}
+
+
+
+}
