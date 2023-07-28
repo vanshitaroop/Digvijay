@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet The Designer</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SM2DtvhF5z/gS6b/+N7h8S2OrFqOfqBeY8h9RxToAegwFvuvhpnUeHY5I97YMzJX" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="/css/style.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- <div class="container mt-5">
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+  </div> -->
+
+    <section id="contact">
+
+        <nav class="navbar" style=" box-shadow: rgba(0, 0, 0, 0.158) 0px 25px 20px -20px;">
+            <div class="container" style="justify-content: center;">
+              <a class="navbar-brand" href="index.html" >
+                <img src="/logo2.png" alt="Bootstrap" width="150" height="auto">
+              </a>
+            </div>
+        </nav>
+
+          
+        <div class="container" id="contact_info" >
+            <h1>Request a private appointment now</h1>
+            <!-- <div class="d-flex pb-5 pt-5">
+                <p>
+                    <a class="nav-link" href="/">Home</a>
+                </p>
+                <span class="bi bi-chevron-compact-right">Request</span>
+            </div> -->
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input type="Name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="Email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Enter your number">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </div>
+    
+    </section>
+
+
+    <!-- <section>
+        <div class="container">
+            <div class="row" >
+                <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="row">
+                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+              </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+        </div>
+    </section> -->
+
+    <!-- Add Bootstrap JS and jQuery scripts here (required for form validation and AJAX) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-KyZXEAg4aAv3eC8uVL0Vh0MQZxW+I0+/zHLLURABssg=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.12.1/dist/umd/popper.min.js"
+        integrity="sha256-dTDpgZfX5zmUKuF8IWrHc/5UJzRYhFBbSCN6TKoJ11c=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-/Y6pSNM15mC0Ls7yj5eQdwH/QKUyKj5t/bBCL5pnw9p9ABl9z/Du5F8n1mMZEp5B"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Handle form submission using AJAX
+        $("#contactForm").submit(function (event) {
+            event.preventDefault();
+            const formData = $(this).serialize();
+
+            $.ajax({
+                type: "POST",
+                url: "submit_form.php", // Replace with the server-side script URL for form submission
+                data: formData,
+                success: function (response) {
+                    // Handle success response, e.g., show a success message
+                    alert("Message sent successfully!");
+                    // Clear the form fields after successful submission
+                    $("#contactForm")[0].reset();
+                },
+                error: function (error) {
+                    // Handle error response, e.g., show an error message
+                    alert("Failed to send message. Please try again later.");
+                }
+            });
+        });
+    </script> -->
+
+    <footer>
+        <div id="shopify-section-password-pre-footer" class="footer-section">
+            <div class="prefooter--content">
+
+              <a href="https://instagram.com/digvijaysingh_artwear?igshid=YzcxN2Q2NzY0OA==" title="Instagram" target="_blank" data-title="instagram">Instagram</a>
+    
+              <a href="mailto:digvijaysinghlabel@gmail.com" title="Email" target="_blank" data-title="email">Email</a>
+
+              <a href="contactus.html" title="contact" target="_blank" data-title="contact">Contact Us</a>
+              <a href="meetthedesigner.html" title="Designer" target="_blank" data-title="contact">Meet The Designer</a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
